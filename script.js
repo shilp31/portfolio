@@ -50,11 +50,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add active class to navigation links based on scroll position
-window.addEventListener('scroll', () => {
+// Throttle function for performance optimization
+function throttle(func, wait) {
+    let waiting = false;
+    return function() {
+        if (!waiting) {
+            func.apply(this, arguments);
+            waiting = true;
+            setTimeout(() => {
+                waiting = false;
+            }, wait);
+        }
+    };
+}
+
+// Combined scroll handler for active links and navbar shadow
+function handleScroll() {
     const sections = document.querySelectorAll('section');
     const scrollPosition = window.scrollY + 100;
     
+    // Update active navigation links
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
@@ -69,7 +84,18 @@ window.addEventListener('scroll', () => {
             });
         }
     });
-});
+    
+    // Update navbar shadow
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    } else {
+        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+    }
+}
+
+// Add throttled scroll event listener
+window.addEventListener('scroll', throttle(handleScroll, 100));
 
 // Add fade-in animation on scroll for cards
 const observerOptions = {
@@ -97,12 +123,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add navbar background on scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-    }
-});
+
