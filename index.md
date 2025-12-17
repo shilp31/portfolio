@@ -5,7 +5,8 @@ title: Welcome
 
 # Welcome to My Portfolio
 
-Hello, I'm Shilpa, a passionate developer.
+Hello, my name is Shilpa.
+I am a passionate developer and love building things with code.
 
 ## Projects
 
