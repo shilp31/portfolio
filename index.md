@@ -30,4 +30,5 @@ I graduated in December, 2025 and am now working on personal projects while look
 ## Contact Me
 
 - Email: [shilpa.ms7264@gmail.com](mailto:shilpa.ms7264@gmail.com)
+- LinkedIn: [shilpa-sudhir-4a3666167](https://www.linkedin.com/in/shilpa-sudhir-4a3666167/)
 - GitHub: [https://github.com/shilp31](https://github.com/shilp31)
