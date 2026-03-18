@@ -9,11 +9,23 @@ Hello, my name is Shilpa.
 
 I am a passionate developer and love building things with code.
 
-## Projects
+I have a professional background in full-stack development and an academic background in Systems, control and mechatronics.
 
-- [Project 1](https://github.com/your-username/project1)
-- [Project 2](https://github.com/your-username/project2)
-- [Project 3](https://github.com/your-username/project3)
+I graduated in December, 2025 and am now working on personal projects while looking for my next professional assignment.
+
+## Current Project
+
+- [React jobs website]
+- [Wind farm]
+- [Leetcode Practice](https://github.com/shilp31/Leetcode-basic)
+
+## Previous Projects
+
+- [Master Thesis : Optimization of estimating intrinsic parameters of a camera using a robot arm.](https://hdl.handle.net/20.500.12380/310801)
+- [Extended Kalman Filter design for orientation estimation of a smartphone]
+- [Model based development of a quadrotor]
+- [Accoustic communication and Adaptive Noise Cancellation]
+- [Linear state estimation and control of DC motor with flywheel](https://github.com/shilp31/LCSD/tree/main)
 
 ## Contact Me
 
